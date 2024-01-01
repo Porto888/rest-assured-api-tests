@@ -7,12 +7,10 @@ import io.restassured.specification.ResponseSpecification;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import java.util.ArrayList;
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
-public class XpathValidations {
+public class GetXpathValidations {
 
     public static RequestSpecification reqSpec;
     public static ResponseSpecification respSpec;

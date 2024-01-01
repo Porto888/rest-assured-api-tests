@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
-public class XmlValidations {
+public class GetXmlValidations {
 
     public static RequestSpecification reqSpec;
     public static ResponseSpecification respSpec;
