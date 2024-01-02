@@ -1,8 +1,10 @@
 package jsonTests;
 
+import SerializandoObjetos.User;
 import io.restassured.RestAssured;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
+import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -71,7 +73,7 @@ public class PostTests {
     }
 
     @Test
-    public void alterarUsuarioUtilizandoMap() {
+    public void salvarUsuarioUtilizandoMap() {
         Map<String, Object> params = new HashMap<String, Object>();
         params.put("name", "GPorto");
         params.put("age", 18);
@@ -93,5 +95,48 @@ public class PostTests {
 
     }
 
+    @Test
+    public void salvarUsuarioUtilizandoObjeto() {
+        User user = new User("User Obj", 21);
+
+        given()
+                .log().all()
+                .contentType("application/json")
+                .body(user)
+                .when()
+                .post("/users")
+                .then()
+                .log().all()
+                .statusCode(201)
+                .body("id", is(notNullValue()))
+                .body("name", is("User Obj"))
+
+
+        ;
+
+    }
+
+    @Test
+    public void deserealizandoObjetoAoSalvarUsuário() {
+        User user = new User("User Obj88", 24);
+
+        User userInserido = given()
+                .log().all()
+                .contentType("application/json")
+                .body(user)
+                .when()
+                .post("/users")
+                .then()
+                .log().all()
+                .statusCode(201)
+                .extract().body().as(User.class)
+
+        ;
+        System.out.println(userInserido);
+        Assert.assertEquals("User Obj88", userInserido.getName());
+        Assert.assertThat(userInserido.getId(), notNullValue());
+
+
+    }
 
 }
