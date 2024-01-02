@@ -20,7 +20,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 import static org.hamcrest.Matchers.notNullValue;
 
-public class GetTests {
+public class GetJsonValidations {
 
 
 //    Abaixo temos exemplos básicos de como realizar  validações utilizando "JsonPath"
