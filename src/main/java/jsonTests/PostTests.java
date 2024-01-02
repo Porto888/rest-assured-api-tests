@@ -1,26 +1,24 @@
 package jsonTests;
 
 import io.restassured.RestAssured;
-import io.restassured.builder.RequestSpecBuilder;
-import io.restassured.builder.ResponseSpecBuilder;
-import io.restassured.filter.log.LogDetail;
-import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import static io.restassured.RestAssured.given;
-import static io.restassured.config.EncoderConfig.encoderConfig;
 import static org.hamcrest.Matchers.*;
 
-public class PostJsonValidations {
+public class PostTests {
 
     public static RequestSpecification reqSpec;
     public static ResponseSpecification respSpec;
 
     @BeforeClass
-    public static void setUp(){
+    public static void setUp() {
         RestAssured.baseURI = "https://restapi.wcaquino.me";
 
 //        RequestSpecBuilder reqBuilder = new RequestSpecBuilder();
@@ -34,8 +32,9 @@ public class PostJsonValidations {
 //        RestAssured.requestSpecification = reqSpec;
 //        RestAssured.responseSpecification = respSpec;
     }
+
     @Test
-    public void salvarUsuario (){
+    public void salvarUsuario() {
         given()
                 .log().all()
                 .contentType("application/json")
@@ -54,7 +53,7 @@ public class PostJsonValidations {
     }
 
     @Test
-    public void naoSalvarUsuarioSemNome(){
+    public void naoSalvarUsuarioSemNome() {
         given()
                 .log().all()
                 .contentType("application/json")
@@ -69,6 +68,29 @@ public class PostJsonValidations {
 
 
         ;
+    }
+
+    @Test
+    public void alterarUsuarioUtilizandoMap() {
+        Map<String, Object> params = new HashMap<String, Object>();
+        params.put("name", "GPorto");
+        params.put("age", 18);
+
+        given()
+                .log().all()
+                .contentType("application/json")
+                .body(params)
+                .when()
+                .post("/users")
+                .then()
+                .log().all()
+                .statusCode(201)
+                .body("id", is(notNullValue()))
+                .body("name", is("GPorto"))
+
+
+        ;
+
     }
 
 
