@@ -1,6 +1,6 @@
-package xmlTests;
+package verbosRest.xmlTests;
 
-import Utils.User;
+import utils.User;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import org.junit.Assert;

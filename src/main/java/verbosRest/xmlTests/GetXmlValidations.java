@@ -1,4 +1,4 @@
-package xmlTests;
+package verbosRest.xmlTests;
 
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
@@ -84,6 +84,21 @@ public class GetXmlValidations {
                 .body("users.user.name.findAll{it.toString().startsWith('Maria')}.collect{it.toString().toUpperCase()}", is("MARIA JOAQUINA"))
 
         ;
+    }
+
+    @Test
+    public void validacoesUtilizandoXmlPath(){
+        given()
+                .when()
+                .get("http://restapi.wcaquino.me/usersXML")
+                .then()
+                .body(hasXPath("count(/users/user)", is("3")))
+                .body(hasXPath("/users/user[@id = '1']"))
+                .body(hasXPath("//user[age < 24]/name", is("Ana Julia")))
+                .body(hasXPath("//name[text() = 'Maria Joaquina']"))
+                .body(hasXPath("//name[text() = 'Ana Julia']/following-sibling::filhos", allOf(containsString("Zezinho"), containsString("Luizinho"))))
+        ;
+
     }
 
 

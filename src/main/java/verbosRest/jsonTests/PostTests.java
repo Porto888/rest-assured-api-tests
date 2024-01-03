@@ -1,6 +1,6 @@
-package jsonTests;
+package verbosRest.jsonTests;
 
-import Utils.User;
+import utils.User;
 import io.restassured.RestAssured;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
