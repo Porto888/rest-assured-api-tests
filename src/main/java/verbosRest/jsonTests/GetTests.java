@@ -1,4 +1,4 @@
-package jsonTests;
+package verbosRest.jsonTests;
 
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;

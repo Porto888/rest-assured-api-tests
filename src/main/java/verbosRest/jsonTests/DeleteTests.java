@@ -1,18 +1,15 @@
-package jsonTests;
+package verbosRest.jsonTests;
 
 import io.restassured.RestAssured;
+import static org.hamcrest.Matchers.is;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.is;
-import static org.hamcrest.Matchers.notNullValue;
 
-public class PutTests {
-
+public class DeleteTests {
     @BeforeClass
     public static void setUp(){
         RestAssured.baseURI = "https://restapi.wcaquino.me";
@@ -29,21 +26,35 @@ public class PutTests {
 //        RestAssured.responseSpecification = respSpec;
     }
     @Test
-    public void alterarUsuario() {
+    public void deletandoUsuario(){
+
         given()
                 .log().all()
                 .contentType("application/json")
-                .body("{ \"name\": \"Porto\", \"age\": 31}")
                 .when()
-                .put("/users/2")
+                .delete("/users/1")
                 .then()
                 .log().all()
-                .statusCode(200)
-                .body("id", is(2))
-                .body("name", is("Porto"))
-
-
+                .statusCode(204)
         ;
+
+
+    }
+
+    @Test
+    public void deletandoUsuarioInexistente(){
+
+        given()
+                .log().all()
+                .contentType("application/json")
+                .when()
+                .delete("/users/5")
+                .then()
+                .log().all()
+                .statusCode(400)
+                .body("error", is("Registro inexistente"))
+        ;
+
 
     }
 }
