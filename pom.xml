@@ -78,8 +78,7 @@
             <scope>test</scope>
         </dependency>
 
-<<<<<<< HEAD
-=======
+<<<<<<<<< Temporary merge branch 1
         <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -117,7 +116,8 @@
 
 
 
->>>>>>> feature/basicstests1
+=========
+>>>>>>>>> Temporary merge branch 2
         <!--        <dependency>-->
 <!--            <groupId>org.testng</groupId>-->
 <!--            <artifactId>testng</artifactId>-->
