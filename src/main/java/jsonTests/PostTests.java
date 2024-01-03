@@ -1,6 +1,6 @@
 package jsonTests;
 
-import SerializandoObjetos.User;
+import Utils.User;
 import io.restassured.RestAssured;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;

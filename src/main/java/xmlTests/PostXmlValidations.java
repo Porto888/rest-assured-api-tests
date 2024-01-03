@@ -1,6 +1,6 @@
 package xmlTests;
 
-import SerializandoObjetos.User;
+import Utils.User;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import org.junit.Assert;
