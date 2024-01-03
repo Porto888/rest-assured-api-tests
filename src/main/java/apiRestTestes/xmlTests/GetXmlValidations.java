@@ -1,4 +1,4 @@
-package verbosRest.xmlTests;
+package apiRestTestes.xmlTests;
 
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;

@@ -1,4 +1,4 @@
-package verbosRest.jsonTests;
+package apiRestTestes.jsonTests;
 
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
@@ -117,6 +117,7 @@ public class GetTests {
     public void verificandoListaNaRaiz(){
         given()
                 .when()
+                .log().all()
                 .get("/users")
                 .then()
 //                .statusCode(200)
