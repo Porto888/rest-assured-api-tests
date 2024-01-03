@@ -1,4 +1,4 @@
-package xmlTests;
+package apiRestTestes.xmlTests;
 
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
@@ -86,6 +86,21 @@ public class GetXmlValidations {
         ;
     }
 
+    @Test
+    public void validacoesUtilizandoXmlPath(){
+        given()
+                .when()
+                .get("http://restapi.wcaquino.me/usersXML")
+                .then()
+                .body(hasXPath("count(/users/user)", is("3")))
+                .body(hasXPath("/users/user[@id = '1']"))
+                .body(hasXPath("//user[age < 24]/name", is("Ana Julia")))
+                .body(hasXPath("//name[text() = 'Maria Joaquina']"))
+                .body(hasXPath("//name[text() = 'Ana Julia']/following-sibling::filhos", allOf(containsString("Zezinho"), containsString("Luizinho"))))
+        ;
+
+    }
+
 
 
 
@@ -105,16 +120,16 @@ public class GetXmlValidations {
         System.out.println(path.toString());
 
 
-//        String name = given()
-//        .spec(reqSpec)
-//                .when()
-//                .get("usersXML")
-//                .then()
-//                .spec(respSpec)
-//                .extract().path("users.user.name.findAll{it.toString().startsWith('Maria')}")
-//
-//                ;
-//        Assert.assertEquals("Maria Joaquina".toUpperCase(), name.toUpperCase());
+        String name = given()
+        .spec(reqSpec)
+                .when()
+                .get("usersXML")
+                .then()
+                .spec(respSpec)
+                .extract().path("users.user.name.findAll{it.toString().startsWith('Maria')}")
+
+                ;
+        Assert.assertEquals("Maria Joaquina".toUpperCase(), name.toUpperCase());
 
         ArrayList<Node> nomes = given()
                 .spec(reqSpec)
