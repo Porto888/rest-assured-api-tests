@@ -1,11 +1,8 @@
-package verbosRest.jsonTests;
+package apiRestTestes.jsonTests;
 
 import io.restassured.RestAssured;
 import org.junit.BeforeClass;
 import org.junit.Test;
-
-import java.util.HashMap;
-import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;

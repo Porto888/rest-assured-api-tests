@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/Welcome5Element"
+  },
+  "definitions": {
+    "Welcome5Element": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "age": {
+          "type": "integer"
+        },
+        "salary": {
+          "type": "number"
+        },
+        "endereco": {
+          "$ref": "#/definitions/Endereco"
+        },
+        "filhos": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Filho"
+          }
+        }
+      },
+      "required": [
+        "age",
+        "id",
+        "name"
+      ],
+      "title": "Welcome5Element"
+    },
+    "Endereco": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "rua": {
+          "type": "string"
+        },
+        "numero": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "numero",
+        "rua"
+      ],
+      "title": "Endereco"
+    },
+    "Filho": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "title": "Filho"
+    }
+  }
+}

@@ -1,4 +1,4 @@
-package verbosRest.xmlTests;
+package apiRestTestes.xmlTests;
 
 import utils.User;
 import io.restassured.RestAssured;

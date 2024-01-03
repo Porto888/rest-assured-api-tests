@@ -1,13 +1,9 @@
-package verbosRest.xpathTest;
+package apiRestTestes.xpathTest;
 
 import io.restassured.RestAssured;
-import io.restassured.builder.RequestSpecBuilder;
-import io.restassured.builder.ResponseSpecBuilder;
-import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
-import org.hamcrest.xml.HasXPath;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
