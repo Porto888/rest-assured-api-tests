@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f21d0a31-d700-4984-8bbf-3392eb0c21ce" name="Changes" comment="Inclusão de novos testes, atualização do arquivo pom.xml e criação da classe user" />
+    <list default="true" id="f21d0a31-d700-4984-8bbf-3392eb0c21ce" name="Changes" comment="Inclusão de novos testes, atualização do arquivo pom.xml e criação da classe user">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,29 +64,34 @@
     <option name="showLibraryContents" value="true" />
     <option name="useFileNestingRules" value="false" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Guilherme/Desktop/Curso_API/rest-assured-api-tests",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Guilherme/Desktop/Curso_API/rest-assured-api-tests&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="SerializandoObjetos" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.XpathValidations.validacoesUrtilizandoXpath">
-    <configuration name="JsonValidations.unindoJasonPathComJava" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FileTests">
+    <configuration name="FileTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JsonValidations" />
-      <option name="METHOD_NAME" value="unindoJasonPathComJava" />
-      <option name="TEST_OBJECT" value="method" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiRestTestes.upload_DownloadTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiRestTestes.upload_DownloadTest" />
+      <option name="MAIN_CLASS_NAME" value="apiRestTestes.upload_DownloadTest.FileTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -129,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FileTests" />
         <item itemvalue="JUnit.XpathValidations.validacoesUrtilizandoXpath" />
         <item itemvalue="JUnit.XmlValidations.validarPontosIsoladosArqXML" />
         <item itemvalue="JUnit.XmlValidations.validarArqXML" />
         <item itemvalue="JUnit.XmlValidations.realizandoTestesMaisAvancadoXmlPathInJava" />
-        <item itemvalue="JUnit.JsonValidations.unindoJasonPathComJava" />
       </list>
     </recent_temporary>
   </component>
