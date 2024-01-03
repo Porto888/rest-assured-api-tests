@@ -105,16 +105,16 @@ public class GetXmlValidations {
         System.out.println(path.toString());
 
 
-//        String name = given()
-//        .spec(reqSpec)
-//                .when()
-//                .get("usersXML")
-//                .then()
-//                .spec(respSpec)
-//                .extract().path("users.user.name.findAll{it.toString().startsWith('Maria')}")
-//
-//                ;
-//        Assert.assertEquals("Maria Joaquina".toUpperCase(), name.toUpperCase());
+        String name = given()
+        .spec(reqSpec)
+                .when()
+                .get("usersXML")
+                .then()
+                .spec(respSpec)
+                .extract().path("users.user.name.findAll{it.toString().startsWith('Maria')}")
+
+                ;
+        Assert.assertEquals("Maria Joaquina".toUpperCase(), name.toUpperCase());
 
         ArrayList<Node> nomes = given()
                 .spec(reqSpec)

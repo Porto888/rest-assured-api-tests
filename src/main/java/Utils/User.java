@@ -1,4 +1,4 @@
-package SerializandoObjetos;
+package Utils;
 
 
 import jakarta.xml.bind.annotation.XmlAccessType;

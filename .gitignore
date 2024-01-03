@@ -1,4 +1,5 @@
-/target/classes
+/target/classes/
+/target/generated-sources/
 
 
 
