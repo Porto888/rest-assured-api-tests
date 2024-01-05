@@ -78,8 +78,7 @@
             <scope>test</scope>
         </dependency>
 
-<<<<<<< HEAD
-=======
+
         <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -115,9 +114,6 @@
             <version>5.4.0</version>
         </dependency>
 
-
-
->>>>>>> feature/basicstests1
         <!--        <dependency>-->
 <!--            <groupId>org.testng</groupId>-->
 <!--            <artifactId>testng</artifactId>-->

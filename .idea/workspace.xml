@@ -4,10 +4,6 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f21d0a31-d700-4984-8bbf-3392eb0c21ce" name="Changes" comment="Realizando validações numa API, pública.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/authenticationApiTest/authTest/basicAuth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/publicApiTest/Auth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/authenticationApiTest/ApiDoTempoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,19 +79,7 @@
       <recent name="publicApiTest" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.basicAuth.realizarAutenticacaoViaTokenJwtOp04">
-    <configuration name="basicAuth.naoAcessarApiSemUsuarioESenha" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="api_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="authenticationApiTest.authTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="publicApiTest.authTest" />
-      <option name="MAIN_CLASS_NAME" value="authenticationApiTest.authTest.basicAuth" />
-      <option name="METHOD_NAME" value="naoAcessarApiSemUsuarioESenha" />
-      <option name="TEST_OBJECT" value="method" />
+
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -166,11 +150,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.basicAuth.realizarAutenticacaoViaTokenJwtOp04" />
-        <item itemvalue="JUnit.basicAuth.realizarAutenticacaoBasicaChallengeOp03" />
-        <item itemvalue="JUnit.basicAuth.realizarAutenticacaoBasicaOp02" />
-        <item itemvalue="JUnit.basicAuth.realizarAutenticacaoBasica" />
-        <item itemvalue="JUnit.basicAuth.naoAcessarApiSemUsuarioESenha" />
+
       </list>
     </recent_temporary>
   </component>

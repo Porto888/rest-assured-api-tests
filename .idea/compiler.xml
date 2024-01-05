@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+
+    <bytecodeTargetLevel>
+      <module name="api_test" target="20" />
+    </bytecodeTargetLevel>
+
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -9,5 +14,9 @@
         <module name="api_test" />
       </profile>
     </annotationProcessing>
+
+>>>>>>> a98e834 (Inclusão das clases de testes criadas até o momento.)
+=========
+>>>>>>>>> Temporary merge branch 2
   </component>
 </project>
