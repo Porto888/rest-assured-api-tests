@@ -1,4 +1,4 @@
-package apiRestTestes.xmlTests;
+package testsApiRestExamples.xmlTests;
 
 import utils.User;
 import io.restassured.RestAssured;

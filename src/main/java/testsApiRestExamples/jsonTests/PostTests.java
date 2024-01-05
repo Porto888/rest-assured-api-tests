@@ -1,4 +1,4 @@
-package apiRestTestes.jsonTests;
+package testsApiRestExamples.jsonTests;
 
 import utils.User;
 import io.restassured.RestAssured;

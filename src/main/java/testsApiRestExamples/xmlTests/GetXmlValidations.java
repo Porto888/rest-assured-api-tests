@@ -1,4 +1,4 @@
-package apiRestTestes.xmlTests;
+package testsApiRestExamples.xmlTests;
 
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;

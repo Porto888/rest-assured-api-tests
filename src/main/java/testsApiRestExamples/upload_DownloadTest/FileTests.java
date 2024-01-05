@@ -1,4 +1,4 @@
-package apiRestTestes.upload_DownloadTest;
+package testsApiRestExamples.upload_DownloadTest;
 
 import io.restassured.RestAssured;
 import org.junit.Assert;

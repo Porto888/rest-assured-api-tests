@@ -1,4 +1,4 @@
-package jsonTests;
+package testsApiRestExamples.jsonTests;
 
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
@@ -20,7 +20,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 import static org.hamcrest.Matchers.notNullValue;
 
-public class GetJsonValidations {
+public class GetTests {
 
 
 //    Abaixo temos exemplos básicos de como realizar  validações utilizando "JsonPath"
@@ -117,6 +117,7 @@ public class GetJsonValidations {
     public void verificandoListaNaRaiz(){
         given()
                 .when()
+                .log().all()
                 .get("/users")
                 .then()
 //                .statusCode(200)

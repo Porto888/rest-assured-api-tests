@@ -1,4 +1,4 @@
-package apiRestTestes.jsonTests;
+package testsApiRestExamples.jsonTests;
 
 import io.restassured.RestAssured;
 import org.junit.BeforeClass;

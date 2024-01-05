@@ -1,15 +1,15 @@
-package apiRestTestes.jsonTests;
+package testsApiRestExamples.xmlTests;
 
 import io.restassured.RestAssured;
-import static org.hamcrest.Matchers.is;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.is;
 
-public class DeleteTests {
+public class PutXmlValidations {
     @BeforeClass
-    public static void setUp(){
+    public static void setUp() {
         RestAssured.baseURI = "https://restapi.wcaquino.me";
 
 //        RequestSpecBuilder reqBuilder = new RequestSpecBuilder();
@@ -23,36 +23,26 @@ public class DeleteTests {
 //        RestAssured.requestSpecification = reqSpec;
 //        RestAssured.responseSpecification = respSpec;
     }
-    @Test
-    public void deletandoUsuario(){
-
-        given()
-                .log().all()
-                .contentType("application/json")
-                .when()
-                .delete("/users/1")
-                .then()
-                .log().all()
-                .statusCode(204)
-        ;
-
-
-    }
 
     @Test
-    public void deletandoUsuarioInexistente(){
-
+    public void editandoUsuario() {
         given()
                 .log().all()
-                .contentType("application/json")
+                .contentType("application/xml")
+                .body("<user>" +
+                        "<name>Rafael Porto</name>" +
+                        "<age>55</age>" +
+                        "</user>")
                 .when()
-                .delete("/users/5")
+                .put("/usersXML")
                 .then()
                 .log().all()
-                .statusCode(400)
-                .body("error", is("Registro inexistente"))
-        ;
+                .statusCode(200)
+                .body("user.@id", is(0))
+                .body("user.name", is("Rafael Porto"))
 
+
+        ;
 
     }
 }

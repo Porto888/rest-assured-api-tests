@@ -1,4 +1,4 @@
-package apiRestTestes.utilizandoQuery;
+package testsApiRestExamples.utilizandoQuery;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;

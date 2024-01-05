@@ -1,4 +1,4 @@
-package apiRestTestes.xpathTest;
+package testsApiRestExamples.xpathTest;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;

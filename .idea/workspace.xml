@@ -4,10 +4,6 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f21d0a31-d700-4984-8bbf-3392eb0c21ce" name="Changes" comment="Inclusão de novos testes, atualização do arquivo pom.xml e criação da classe user">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,15 +16,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/basicstests" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -79,58 +75,74 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="SerializandoObjetos" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="publicApiTest" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.FileTests">
-    <configuration name="FileTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="basicAuth.realizarAutenticacaoBasica" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="apiRestTestes.upload_DownloadTest.*" />
+          <option name="PATTERN" value="authenticationApiTest.authTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="apiRestTestes.upload_DownloadTest" />
-      <option name="MAIN_CLASS_NAME" value="apiRestTestes.upload_DownloadTest.FileTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="XmlValidations.realizandoTestesMaisAvancadoXmlPathInJava" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="api_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="XmlValidations" />
-      <option name="METHOD_NAME" value="realizandoTestesMaisAvancadoXmlPathInJava" />
+      <option name="PACKAGE_NAME" value="publicApiTest.authTest" />
+      <option name="MAIN_CLASS_NAME" value="authenticationApiTest.authTest.basicAuth" />
+      <option name="METHOD_NAME" value="realizarAutenticacaoBasica" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XmlValidations.validarArqXML" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="basicAuth.realizarAutenticacaoBasicaChallengeOp03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="XmlValidations" />
-      <option name="METHOD_NAME" value="validarArqXML" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="authenticationApiTest.authTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="publicApiTest.authTest" />
+      <option name="MAIN_CLASS_NAME" value="authenticationApiTest.authTest.basicAuth" />
+      <option name="METHOD_NAME" value="realizarAutenticacaoBasicaChallengeOp03" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XmlValidations.validarPontosIsoladosArqXML" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="basicAuth.realizarAutenticacaoBasicaOp02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="XmlValidations" />
-      <option name="METHOD_NAME" value="validarPontosIsoladosArqXML" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="authenticationApiTest.authTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="publicApiTest.authTest" />
+      <option name="MAIN_CLASS_NAME" value="authenticationApiTest.authTest.basicAuth" />
+      <option name="METHOD_NAME" value="realizarAutenticacaoBasicaOp02" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XpathValidations.validacoesUrtilizandoXpath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="basicAuth.realizarAutenticacaoViaTokenJwtOp04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="XpathValidations" />
-      <option name="METHOD_NAME" value="validacoesUrtilizandoXpath" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="authenticationApiTest.authTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="publicApiTest.authTest" />
+      <option name="MAIN_CLASS_NAME" value="authenticationApiTest.authTest.basicAuth" />
+      <option name="METHOD_NAME" value="realizarAutenticacaoViaTokenJwtOp04" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -138,11 +150,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FileTests" />
-        <item itemvalue="JUnit.XpathValidations.validacoesUrtilizandoXpath" />
-        <item itemvalue="JUnit.XmlValidations.validarPontosIsoladosArqXML" />
-        <item itemvalue="JUnit.XmlValidations.validarArqXML" />
-        <item itemvalue="JUnit.XmlValidations.realizandoTestesMaisAvancadoXmlPathInJava" />
+
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +219,21 @@
       <option name="project" value="LOCAL" />
       <updated>1704230356760</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Ajustes pontuais">
+      <created>1704311297113</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1704311297113</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Realizando validações numa API, pública.">
+      <created>1704471120481</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1704471120481</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,7 +262,9 @@
     <MESSAGE value="Continuação das validações tipo PostJson" />
     <MESSAGE value="Inclusão de novas classes de teste" />
     <MESSAGE value="Inclusão de novos testes, atualização do arquivo pom.xml e criação da classe user" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inclusão de novos testes, atualização do arquivo pom.xml e criação da classe user" />
+    <MESSAGE value="Ajustes pontuais" />
+    <MESSAGE value="Realizando validações numa API, pública." />
+    <option name="LAST_COMMIT_MESSAGE" value="Realizando validações numa API, pública." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
