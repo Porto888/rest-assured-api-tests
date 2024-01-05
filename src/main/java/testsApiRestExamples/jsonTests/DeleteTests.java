@@ -1,13 +1,13 @@
-package apiRestTestes.xmlTests;
+package testsApiRestExamples.jsonTests;
 
 import io.restassured.RestAssured;
+import static org.hamcrest.Matchers.is;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.is;
 
-public class Delete {
+public class DeleteTests {
     @BeforeClass
     public static void setUp(){
         RestAssured.baseURI = "https://restapi.wcaquino.me";
@@ -28,7 +28,7 @@ public class Delete {
 
         given()
                 .log().all()
-                .contentType("application/xml")
+                .contentType("application/json")
                 .when()
                 .delete("/users/1")
                 .then()
@@ -44,7 +44,7 @@ public class Delete {
 
         given()
                 .log().all()
-                .contentType("application/xml")
+                .contentType("application/json")
                 .when()
                 .delete("/users/5")
                 .then()

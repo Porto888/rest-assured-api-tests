@@ -1,14 +1,15 @@
-package apiRestTestes.xmlTests;
+package testsApiRestExamples.jsonTests;
 
 import io.restassured.RestAssured;
 import io.restassured.matcher.RestAssuredMatchers;
+import io.restassured.module.jsv.JsonSchemaValidator;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.xml.sax.SAXParseException;
 
 import static io.restassured.RestAssured.given;
 
-public class SquemaValidation {
+public class SquemaJsonValidation {
 
     @BeforeClass
     public static void setUp(){
@@ -16,30 +17,30 @@ public class SquemaValidation {
 
     }
 @Test
-    public void validandoSchemaXML(){
+    public void validandoSchemaJSON(){
     given()
             .log().all()
             .when()
-            .get("/usersXML")
+            .get("/users")
             .then()
             .log().all()
             .statusCode(200)
-            .body(RestAssuredMatchers.matchesXsdInClasspath("users.xsd"))
+            .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("users.json"))
 
     ;
 
     }
 
-    @Test(expected = SAXParseException.class )
+    @Test(expected = SAXParseException.class ) 
     public void naoDeveValidarSchemaXMLInvalido(){
     given()
             .log().all()
             .when()
-            .get("/invalidUsersXML")
+            .get("/invalidUsersJSON")
             .then()
             .log().all()
-            .statusCode(200)
-            .body(RestAssuredMatchers.matchesXsdInClasspath("users.xsd"))
+            .statusCode(404)
+            .body(RestAssuredMatchers.matchesXsdInClasspath("users.json"))
 
     ;
 
