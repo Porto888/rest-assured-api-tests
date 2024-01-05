@@ -1,12 +1,13 @@
-package publicApiTest;
+package authenticationApiTest;
 
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
 
-public class Auth {
+public class ApiDoTempoTest {
 
+//    Explipcar como obter a chave de acesso a API
     @Test
     public void naoDeveAcessarWeatherMapApiSemAutenticacao(){
         given()

@@ -4,26 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f21d0a31-d700-4984-8bbf-3392eb0c21ce" name="Changes" comment="Ajustes pontuais">
-      <change afterPath="$PROJECT_DIR$/src/main/java/publicApiTest/Auth.java" afterDir="false" />
+    <list default="true" id="f21d0a31-d700-4984-8bbf-3392eb0c21ce" name="Changes" comment="Realizando validações numa API, pública.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/authenticationApiTest/authTest/basicAuth.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BasicsValidations.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apiRestTestes/jsonTests/DeleteTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testsApiRestExamples/jsonTests/DeleteTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apiRestTestes/jsonTests/GetTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testsApiRestExamples/jsonTests/GetTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apiRestTestes/jsonTests/PostTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testsApiRestExamples/jsonTests/PostTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apiRestTestes/jsonTests/PutTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testsApiRestExamples/jsonTests/PutTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apiRestTestes/jsonTests/SquemaJsonValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testsApiRestExamples/jsonTests/SquemaJsonValidation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apiRestTestes/upload_DownloadTest/FileTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testsApiRestExamples/upload_DownloadTest/FileTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apiRestTestes/utilizandoQuery/UtlQueryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testsApiRestExamples/utilizandoQuery/UtlQueryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apiRestTestes/xmlTests/Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testsApiRestExamples/xmlTests/Delete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apiRestTestes/xmlTests/GetXmlValidations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testsApiRestExamples/xmlTests/GetXmlValidations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apiRestTestes/xmlTests/PostXmlValidations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testsApiRestExamples/xmlTests/PostXmlValidations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apiRestTestes/xmlTests/PutXmlValidations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testsApiRestExamples/xmlTests/PutXmlValidations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apiRestTestes/xmlTests/SquemaValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testsApiRestExamples/xmlTests/SquemaValidation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apiRestTestes/xpathTest/HtmlPathValidations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testsApiRestExamples/xpathTest/HtmlPathValidations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsonTests/GetJsonValidations.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsonTests/PostJsonValidations.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BasicsValidations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/publicApiTest/Auth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/authenticationApiTest/ApiDoTempoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,70 +83,82 @@
       <recent name="publicApiTest" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Auth.acessarWeatherMapApi">
-    <configuration name="Auth.acessarApiPublica" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.basicAuth.realizarAutenticacaoViaTokenJwtOp04">
+    <configuration name="basicAuth.naoAcessarApiSemUsuarioESenha" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="publicApiTest.authentication.*" />
+          <option name="PATTERN" value="authenticationApiTest.authTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="publicApiTest.authentication" />
-      <option name="MAIN_CLASS_NAME" value="publicApiTest.authentication.Auth" />
-      <option name="METHOD_NAME" value="acessarApiPublica" />
+      <option name="PACKAGE_NAME" value="publicApiTest.authTest" />
+      <option name="MAIN_CLASS_NAME" value="authenticationApiTest.authTest.basicAuth" />
+      <option name="METHOD_NAME" value="naoAcessarApiSemUsuarioESenha" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Auth.acessarWeatherMapApi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="basicAuth.realizarAutenticacaoBasica" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="publicApiTest.*" />
+          <option name="PATTERN" value="authenticationApiTest.authTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="publicApiTest" />
-      <option name="MAIN_CLASS_NAME" value="publicApiTest.Auth" />
-      <option name="METHOD_NAME" value="acessarWeatherMapApi" />
+      <option name="PACKAGE_NAME" value="publicApiTest.authTest" />
+      <option name="MAIN_CLASS_NAME" value="authenticationApiTest.authTest.basicAuth" />
+      <option name="METHOD_NAME" value="realizarAutenticacaoBasica" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Auth.naoDeveAcessarWeatherMapApiSemAutenticacao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="basicAuth.realizarAutenticacaoBasicaChallengeOp03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="publicApiTest.*" />
+          <option name="PATTERN" value="authenticationApiTest.authTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="publicApiTest" />
-      <option name="MAIN_CLASS_NAME" value="publicApiTest.Auth" />
-      <option name="METHOD_NAME" value="naoDeveAcessarWeatherMapApiSemAutenticacao" />
+      <option name="PACKAGE_NAME" value="publicApiTest.authTest" />
+      <option name="MAIN_CLASS_NAME" value="authenticationApiTest.authTest.basicAuth" />
+      <option name="METHOD_NAME" value="realizarAutenticacaoBasicaChallengeOp03" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XmlValidations.validarPontosIsoladosArqXML" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="basicAuth.realizarAutenticacaoBasicaOp02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="XmlValidations" />
-      <option name="METHOD_NAME" value="validarPontosIsoladosArqXML" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="authenticationApiTest.authTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="publicApiTest.authTest" />
+      <option name="MAIN_CLASS_NAME" value="authenticationApiTest.authTest.basicAuth" />
+      <option name="METHOD_NAME" value="realizarAutenticacaoBasicaOp02" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XpathValidations.validacoesUrtilizandoXpath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="basicAuth.realizarAutenticacaoViaTokenJwtOp04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="XpathValidations" />
-      <option name="METHOD_NAME" value="validacoesUrtilizandoXpath" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="authenticationApiTest.authTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="publicApiTest.authTest" />
+      <option name="MAIN_CLASS_NAME" value="authenticationApiTest.authTest.basicAuth" />
+      <option name="METHOD_NAME" value="realizarAutenticacaoViaTokenJwtOp04" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -170,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Auth.acessarWeatherMapApi" />
-        <item itemvalue="JUnit.Auth.naoDeveAcessarWeatherMapApiSemAutenticacao" />
-        <item itemvalue="JUnit.Auth.acessarApiPublica" />
-        <item itemvalue="JUnit.XpathValidations.validacoesUrtilizandoXpath" />
-        <item itemvalue="JUnit.XmlValidations.validarPontosIsoladosArqXML" />
+        <item itemvalue="JUnit.basicAuth.realizarAutenticacaoViaTokenJwtOp04" />
+        <item itemvalue="JUnit.basicAuth.realizarAutenticacaoBasicaChallengeOp03" />
+        <item itemvalue="JUnit.basicAuth.realizarAutenticacaoBasicaOp02" />
+        <item itemvalue="JUnit.basicAuth.realizarAutenticacaoBasica" />
+        <item itemvalue="JUnit.basicAuth.naoAcessarApiSemUsuarioESenha" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704311297113</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Realizando validações numa API, pública.">
+      <created>1704471120481</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1704471120481</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -280,7 +283,8 @@
     <MESSAGE value="Inclusão de novas classes de teste" />
     <MESSAGE value="Inclusão de novos testes, atualização do arquivo pom.xml e criação da classe user" />
     <MESSAGE value="Ajustes pontuais" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajustes pontuais" />
+    <MESSAGE value="Realizando validações numa API, pública." />
+    <option name="LAST_COMMIT_MESSAGE" value="Realizando validações numa API, pública." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
